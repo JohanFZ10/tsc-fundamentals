@@ -12,4 +12,57 @@
     TypeScript, esta analizando nuestro codigo en tiempo real, indicandonos si existe una
     mejor manera de escribir nuestro codigo, si podemos reducir lineas de codigo, o si nuestra
     implementacion de alguna funcion tiene probabilidad de bugs.
+2. TypeScript Vs JavaScript
+    En JavaScript, solo te das cuenta de los errores cuando estas en ejecucion, pero con 
+    TypeScript, mientras se escribe el codigo, te vas dando cuenta de los errores. Ademas de
+    realizar un analisis estatico del codigo, TypeScript integra un compilador que al ejecutarlo
+    nos mostrara aquellos errores mas profundos en nuestro codigo.
+    TypeScript es como usar JavaScript pero con superPoderes. Por ello, pasar de JavaScript a
+    TypeScript no deberia ser muy complicado, siempre y cuando se tengan bases solidas en JS.
+3.  Capas de Test
+    Existen 3 capas basicas de test cuando realizas codigo, estas son:
+        1) Analisis de codigo estatico: Consiste en revisar nuestro codigo a medida que los vamos
+        escribiendo. Tambien incluye las etapa de compilacion. En esta capa actua TypeScript. Cuando
+        pruebas tu codigo en ejecucion, hablamos de pruebas dinamicas, donde tambien actua 
+        TypeScript.
+        2) Pruebas Unitarias:  Que consiste en tomar bloqes de codigo separados (funciones, metodos)
+        y probar sus funcionalidades, dandole los parametros que necesita y verificando su
+        respuesta.
+        3) Pruebas de integracion: Consiste en realizar pruebas a todos los bloques de codigo integrados
+        validando su operatividad en conjunto.    
+    4.  ¿Como crear un archivo .gitignore?
+    Ingresar al link: https://www.toptal.com/developers/gitignore/, escribir los S.O. donde va
+    a trabajar nuestra App, usualmente seria: windows, linux, mac.
+    En nuestro directorio local, creamos el archivo .gitignore, copiamos y pegamos el contenido
+    suministrado por gitignore.io
+5.  Configuracion del Proyecto
+    - npm init -y
+    - npm install typescript --save-dev (-D) instala TSC de manera local
+    - npx tsc --version
+    - se crear el archivo .gitignore y el archivo .editorconfig, instalando previamente la 
+    extension 'EditorConfig for VS Code' en VsCode
+    - Crear un directorio para el codigo fuente llamado "src"
+    - Crear un directorio para los archivos resultantes de la transpilacion llamado 
+    dist (distribucion)
+    - Crear el archivo tsconfig.json ejecutando el comando npx tsc --init en la direccion
+    raiz del proyecto, si tsc se instalo de manera local. Si se instalo de manera global
+    ejecutar tsc --init
+    - Configurar la clave target y outDir del archivo tsconfig.json, especificando la version
+    de JS a transpilar (es5,es6,es7 etc) y el directorio de salida para los archivos .js que se
+    generan como resultado de la transpilacion (Por lo general se escoge ./dist) que es la carpeta
+    de distribucion.
+    - Ejecutar el comando npx tsc -p ./ -w
+
+6. ¿Como se ejecuta un archivo .ts?
+    Si somos bastante estrictos, podriamos decir que no existe una manera directa de 
+    ejecutar TypeScript, dado que los navegadores Web solo ejecutan o entienden JS y de
+    hecho NodeJS tambien. Es por esto, que para ejecutar TypeScript, es necesario hacer
+    uso de un proceso de transpilacion, donde se obtiene un archivo JavaScript, equivalente
+    al archivo TypeScript que hemos descrito.
+    Para realizar el proceso de transpilacion, se puede ejecutar el comando npx tsc name.ts
+    Si queremos transpilar todos los archivos ts existentes en nuestro directorio, basta
+    con ejecutar npx ts
+
+OJO: Herramientas Potenciales
+    1- https://www.typescriptlang.org/play?#code/Q editor de typescript Online
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
