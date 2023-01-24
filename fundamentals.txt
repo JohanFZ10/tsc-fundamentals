@@ -1,0 +1,15 @@
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::: FUNDAMENTOS DE TYPESCRIPT ::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+1. ¿Que es TypeScript?
+    Como primer acercamiento al concepto, TypeScript es un analizador de codigo estatico, que
+    tiene como mision, reducir la cantidad de bugs en produccion. Tambien se le considera 
+    como una herramienta que le ayuda a los desarrolladores a escribir codigo mas eficiente y
+    menos propenso a errores. Segun un estudio realizado, el solo hecho de incluir TypeScript
+    en nuestro proyecto, reduce en un 15% la probabilidad de bugs en produccion. Algunas
+    empresas afirman: "Al integrar TypeScript en nuestros proyectos, hemos logrado reducir
+    hasta en un 38 % la cantidad de bugs en produccion.
+    TypeScript, esta analizando nuestro codigo en tiempo real, indicandonos si existe una
+    mejor manera de escribir nuestro codigo, si podemos reducir lineas de codigo, o si nuestra
+    implementacion de alguna funcion tiene probabilidad de bugs.
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
