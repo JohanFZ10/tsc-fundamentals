@@ -63,6 +63,26 @@
     Si queremos transpilar todos los archivos ts existentes en nuestro directorio, basta
     con ejecutar npx ts
 
+7. Tipado que en TypeScript:
+    Consiste en especificar de manera explicita el tipo de dato a usar. Sin embargo, Tsc,
+    puede inferir el tipo de dato de una variable a partir de la declaracion del valor inicial
+    que esta tendra. Ej: var numero = 2; con esta declaracion y basandose en el valor inicial
+    declarado para la variable numero, TypeScript infiere que numero, es del tipo Number.
+    La otra manera de indicar el tipado, es de forma explicita. Ej: var numero: Number = 2;
+    Cuando no se trabaja de manera modular con archivos .tsc, como si se hace en Angula, React
+    Vue, etc, no es posible utilizar palabras o nombres de variables iguales en mas de un 
+    archivo .tsc. Para corregir esto, se hace uso de las funciones IIFE (Inmediatly Invoke 
+    funcion expression) expresion de funcion invocada inmediatamente, o en palabras mas sencillas
+    "Funciones Anonimas Autoejecutadas" cuya sintaxis puede ser:
+    ((parameters)=>{statements})(); o (function(parameters){statements})();})
+
+8. Inspector --watch para archivos .ts
+    Asi como node tiene una dependencia de desarrollo llamada nodemon, que esta constantemente
+    vigilando si hay cambios en los archivo .js, para reiniciarlos de manera automatica, 
+    typescript tambien tiene un inspector (--watch) encargado de vigilar si existe algun cambio
+    en los archivos .ts, para volverlos a transpilar. Para usarlo, basta con ejecutar
+    npx tsc --watch
+
 OJO: Herramientas Potenciales
     1- https://www.typescriptlang.org/play?#code/Q editor de typescript Online
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
