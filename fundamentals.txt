@@ -85,4 +85,6 @@
 
 OJO: Herramientas Potenciales
     1- https://www.typescriptlang.org/play?#code/Q editor de typescript Online
+    2- https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-2.html documentacion 
+    oficial de typescript
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
